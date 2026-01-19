@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0888782b346bce51eb9bb6007a7fe6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d0888782b346bce51eb9bb6007a7fe6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d0888782b346bce51eb9bb6007a7fe6a = L.map(
+                "map_d0888782b346bce51eb9bb6007a7fe6a",
+                {
+                    center: [22.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f335d88eefd3d4e2abbf155161528a03 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f335d88eefd3d4e2abbf155161528a03.addTo(map_d0888782b346bce51eb9bb6007a7fe6a);
+        
+    
+            var feature_group_829d35432014f1f5c80460b54fa9f078 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_bf4d0f25d4cc98e569441282196335a5 = L.circleMarker(
+                [11.7401, 92.6586],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4457, "stroke": true, "weight": 3}
+            ).addTo(feature_group_829d35432014f1f5c80460b54fa9f078);
+        
+    
+        var popup_93680bb07e5271498551b6b0451cfb84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f55a4040910b791696942f7c99ca2282 = $(`<div id="html_f55a4040910b791696942f7c99ca2282" style="width: 100.0%; height: 100.0%;"><b>Andaman & Nicobar Islands</b><br>Risk:34457<br>Level:EXTREME</div>`)[0];
+                popup_93680bb07e5271498551b6b0451cfb84.setContent(html_f55a4040910b791696942f7c99ca2282);
+            
+        
+
+        circle_marker_bf4d0f25d4cc98e569441282196335a5.bindPopup(popup_93680bb07e5271498551b6b0451cfb84)
+        ;
+
+        
+    
+    
+            circle_marker_bf4d0f25d4cc98e569441282196335a5.bindTooltip(
+                `<div>
+                     Andaman & Nicobar Islands | EXTREME
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_095f41967c1cb783127e1dd0d10e5c04 = L.circleMarker(
+                [33.7782, 76.5762],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4459, "stroke": true, "weight": 3}
+            ).addTo(feature_group_829d35432014f1f5c80460b54fa9f078);
+        
+    
+        var popup_0f77f2faa5d4787c38e5cc58b89618e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b43b808f1c25c66439f2aa0c1efe1e5 = $(`<div id="html_5b43b808f1c25c66439f2aa0c1efe1e5" style="width: 100.0%; height: 100.0%;"><b>Jammu & Kashmir</b><br>Risk:34459<br>Level:EXTREME</div>`)[0];
+                popup_0f77f2faa5d4787c38e5cc58b89618e1.setContent(html_5b43b808f1c25c66439f2aa0c1efe1e5);
+            
+        
+
+        circle_marker_095f41967c1cb783127e1dd0d10e5c04.bindPopup(popup_0f77f2faa5d4787c38e5cc58b89618e1)
+        ;
+
+        
+    
+    
+            circle_marker_095f41967c1cb783127e1dd0d10e5c04.bindTooltip(
+                `<div>
+                     Jammu & Kashmir | EXTREME
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_829d35432014f1f5c80460b54fa9f078.addTo(map_d0888782b346bce51eb9bb6007a7fe6a);
+        
+    
+            var feature_group_906895323084fb5f210353ec69ca6c54 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_5e3455cf96c0e6acef9f3833dcb1e805 = L.circleMarker(
+                [20.4283, 72.8397],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4425, "stroke": true, "weight": 3}
+            ).addTo(feature_group_906895323084fb5f210353ec69ca6c54);
+        
+    
+        var popup_236f7db0818bf39d41fa052637654472 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c9bb7896f2a6006c5d4db8e153edf61 = $(`<div id="html_9c9bb7896f2a6006c5d4db8e153edf61" style="width: 100.0%; height: 100.0%;"><b>Daman & Diu</b><br>Risk:34425<br>Level:HIGH</div>`)[0];
+                popup_236f7db0818bf39d41fa052637654472.setContent(html_9c9bb7896f2a6006c5d4db8e153edf61);
+            
+        
+
+        circle_marker_5e3455cf96c0e6acef9f3833dcb1e805.bindPopup(popup_236f7db0818bf39d41fa052637654472)
+        ;
+
+        
+    
+    
+            circle_marker_5e3455cf96c0e6acef9f3833dcb1e805.bindTooltip(
+                `<div>
+                     Daman & Diu | HIGH
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_906895323084fb5f210353ec69ca6c54.addTo(map_d0888782b346bce51eb9bb6007a7fe6a);
+        
+    
+            var feature_group_f24882fa53cb31b72e0c52b336e3e6c7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_cd662028f02cb1c3e07c46ce8f83bc23 = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4335, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_cff8adc8197eb0c5320d58e1da0d5f52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6965b08f5ab5920abf66bd4ef9e16e3e = $(`<div id="html_6965b08f5ab5920abf66bd4ef9e16e3e" style="width: 100.0%; height: 100.0%;"><b>Andhra Pradesh</b><br>Risk:34335<br>Level:NORMAL</div>`)[0];
+                popup_cff8adc8197eb0c5320d58e1da0d5f52.setContent(html_6965b08f5ab5920abf66bd4ef9e16e3e);
+            
+        
+
+        circle_marker_cd662028f02cb1c3e07c46ce8f83bc23.bindPopup(popup_cff8adc8197eb0c5320d58e1da0d5f52)
+        ;
+
+        
+    
+    
+            circle_marker_cd662028f02cb1c3e07c46ce8f83bc23.bindTooltip(
+                `<div>
+                     Andhra Pradesh | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edaa8fe9a457bef7243ff569d88df729 = L.circleMarker(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4091, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_ed2a91d354116f9cbfbf3b9647df90a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84c2d3d21a35cd0e8b32a820637ae4d3 = $(`<div id="html_84c2d3d21a35cd0e8b32a820637ae4d3" style="width: 100.0%; height: 100.0%;"><b>Assam</b><br>Risk:34091<br>Level:NORMAL</div>`)[0];
+                popup_ed2a91d354116f9cbfbf3b9647df90a5.setContent(html_84c2d3d21a35cd0e8b32a820637ae4d3);
+            
+        
+
+        circle_marker_edaa8fe9a457bef7243ff569d88df729.bindPopup(popup_ed2a91d354116f9cbfbf3b9647df90a5)
+        ;
+
+        
+    
+    
+            circle_marker_edaa8fe9a457bef7243ff569d88df729.bindTooltip(
+                `<div>
+                     Assam | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43860a17af7c4443ecc1d627858ca432 = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4283, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_f4a410aa33c7f8fddc88dd6422aabfda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_063837cde32071b415c943641f8d804c = $(`<div id="html_063837cde32071b415c943641f8d804c" style="width: 100.0%; height: 100.0%;"><b>Bihar</b><br>Risk:34283<br>Level:NORMAL</div>`)[0];
+                popup_f4a410aa33c7f8fddc88dd6422aabfda.setContent(html_063837cde32071b415c943641f8d804c);
+            
+        
+
+        circle_marker_43860a17af7c4443ecc1d627858ca432.bindPopup(popup_f4a410aa33c7f8fddc88dd6422aabfda)
+        ;
+
+        
+    
+    
+            circle_marker_43860a17af7c4443ecc1d627858ca432.bindTooltip(
+                `<div>
+                     Bihar | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fb3934a0843fe9325f0aea2d66538f7 = L.circleMarker(
+                [20.1809, 73.0169],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4095, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_03ffde3aaab975172b5b256ce830cbd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_488e82c31f4912e6eabb9ce2f665be7b = $(`<div id="html_488e82c31f4912e6eabb9ce2f665be7b" style="width: 100.0%; height: 100.0%;"><b>Dadra & Nagar Haveli</b><br>Risk:34095<br>Level:NORMAL</div>`)[0];
+                popup_03ffde3aaab975172b5b256ce830cbd0.setContent(html_488e82c31f4912e6eabb9ce2f665be7b);
+            
+        
+
+        circle_marker_6fb3934a0843fe9325f0aea2d66538f7.bindPopup(popup_03ffde3aaab975172b5b256ce830cbd0)
+        ;
+
+        
+    
+    
+            circle_marker_6fb3934a0843fe9325f0aea2d66538f7.bindTooltip(
+                `<div>
+                     Dadra & Nagar Haveli | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef6c6d7c2a3a749ae90a1de6805bf8df = L.circleMarker(
+                [28.7041, 77.1025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4171, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_3b1c72d56642f07edd324747357e47a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_519b215354af1fc03ad4a2fdcabd52b8 = $(`<div id="html_519b215354af1fc03ad4a2fdcabd52b8" style="width: 100.0%; height: 100.0%;"><b>Delhi</b><br>Risk:34171<br>Level:NORMAL</div>`)[0];
+                popup_3b1c72d56642f07edd324747357e47a3.setContent(html_519b215354af1fc03ad4a2fdcabd52b8);
+            
+        
+
+        circle_marker_ef6c6d7c2a3a749ae90a1de6805bf8df.bindPopup(popup_3b1c72d56642f07edd324747357e47a3)
+        ;
+
+        
+    
+    
+            circle_marker_ef6c6d7c2a3a749ae90a1de6805bf8df.bindTooltip(
+                `<div>
+                     Delhi | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f1a549c1a4e5b52a325ee1416f141e6 = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4159, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_7a67758d51ca5458c6c6b408391d4568 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d509fcd5d3db4488002377167c414df = $(`<div id="html_7d509fcd5d3db4488002377167c414df" style="width: 100.0%; height: 100.0%;"><b>Gujarat</b><br>Risk:34159<br>Level:NORMAL</div>`)[0];
+                popup_7a67758d51ca5458c6c6b408391d4568.setContent(html_7d509fcd5d3db4488002377167c414df);
+            
+        
+
+        circle_marker_2f1a549c1a4e5b52a325ee1416f141e6.bindPopup(popup_7a67758d51ca5458c6c6b408391d4568)
+        ;
+
+        
+    
+    
+            circle_marker_2f1a549c1a4e5b52a325ee1416f141e6.bindTooltip(
+                `<div>
+                     Gujarat | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2cac95e2e11d16b457610105c6f329b = L.circleMarker(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4299, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_3e7984291b30f557d775f4708186b073 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75f1128c4fb11559bc8fd09e7493b6e3 = $(`<div id="html_75f1128c4fb11559bc8fd09e7493b6e3" style="width: 100.0%; height: 100.0%;"><b>Haryana</b><br>Risk:34299<br>Level:NORMAL</div>`)[0];
+                popup_3e7984291b30f557d775f4708186b073.setContent(html_75f1128c4fb11559bc8fd09e7493b6e3);
+            
+        
+
+        circle_marker_d2cac95e2e11d16b457610105c6f329b.bindPopup(popup_3e7984291b30f557d775f4708186b073)
+        ;
+
+        
+    
+    
+            circle_marker_d2cac95e2e11d16b457610105c6f329b.bindTooltip(
+                `<div>
+                     Haryana | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f267d0dd3335d38daaa79193ea9846c = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.432, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_3d5521f2f4000acbb0bb83e654ac6fef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86d675f746fda0f1dbb600c920d65098 = $(`<div id="html_86d675f746fda0f1dbb600c920d65098" style="width: 100.0%; height: 100.0%;"><b>Karnataka</b><br>Risk:34320<br>Level:NORMAL</div>`)[0];
+                popup_3d5521f2f4000acbb0bb83e654ac6fef.setContent(html_86d675f746fda0f1dbb600c920d65098);
+            
+        
+
+        circle_marker_7f267d0dd3335d38daaa79193ea9846c.bindPopup(popup_3d5521f2f4000acbb0bb83e654ac6fef)
+        ;
+
+        
+    
+    
+            circle_marker_7f267d0dd3335d38daaa79193ea9846c.bindTooltip(
+                `<div>
+                     Karnataka | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50f7754114f5e96ce14d49d3bd6adcec = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.433, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_c6e488e41f65ad4e573646d648e7e59a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5cdcbbb119db4de3d12d318061a263c = $(`<div id="html_e5cdcbbb119db4de3d12d318061a263c" style="width: 100.0%; height: 100.0%;"><b>Kerala</b><br>Risk:34330<br>Level:NORMAL</div>`)[0];
+                popup_c6e488e41f65ad4e573646d648e7e59a.setContent(html_e5cdcbbb119db4de3d12d318061a263c);
+            
+        
+
+        circle_marker_50f7754114f5e96ce14d49d3bd6adcec.bindPopup(popup_c6e488e41f65ad4e573646d648e7e59a)
+        ;
+
+        
+    
+    
+            circle_marker_50f7754114f5e96ce14d49d3bd6adcec.bindTooltip(
+                `<div>
+                     Kerala | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c4a5a74aa999e5134992cdce0c136eb = L.circleMarker(
+                [22.9734, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4269, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_4b3f22e54579d70448abbdeb6ff6dc5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e85998520ce5c0c73f1c8f0e2c5a1bad = $(`<div id="html_e85998520ce5c0c73f1c8f0e2c5a1bad" style="width: 100.0%; height: 100.0%;"><b>Madhya Pradesh</b><br>Risk:34269<br>Level:NORMAL</div>`)[0];
+                popup_4b3f22e54579d70448abbdeb6ff6dc5b.setContent(html_e85998520ce5c0c73f1c8f0e2c5a1bad);
+            
+        
+
+        circle_marker_8c4a5a74aa999e5134992cdce0c136eb.bindPopup(popup_4b3f22e54579d70448abbdeb6ff6dc5b)
+        ;
+
+        
+    
+    
+            circle_marker_8c4a5a74aa999e5134992cdce0c136eb.bindTooltip(
+                `<div>
+                     Madhya Pradesh | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_032250cbb133cd0562b8f586c7d92977 = L.circleMarker(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.432, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_d8be3372492f4139d4a8cbaacdcdf4ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dfc5ff4f7e8472c4ef038234d864886 = $(`<div id="html_9dfc5ff4f7e8472c4ef038234d864886" style="width: 100.0%; height: 100.0%;"><b>Maharashtra</b><br>Risk:34320<br>Level:NORMAL</div>`)[0];
+                popup_d8be3372492f4139d4a8cbaacdcdf4ec.setContent(html_9dfc5ff4f7e8472c4ef038234d864886);
+            
+        
+
+        circle_marker_032250cbb133cd0562b8f586c7d92977.bindPopup(popup_d8be3372492f4139d4a8cbaacdcdf4ec)
+        ;
+
+        
+    
+    
+            circle_marker_032250cbb133cd0562b8f586c7d92977.bindTooltip(
+                `<div>
+                     Maharashtra | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1272213014e7325b47a31bba119b61d = L.circleMarker(
+                [25.467, 91.3662],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3605, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_09e8460a9b7d7b14cc946ec42892cb4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4338cc0afd23ed379bb493e6007b275e = $(`<div id="html_4338cc0afd23ed379bb493e6007b275e" style="width: 100.0%; height: 100.0%;"><b>Meghalaya</b><br>Risk:33605<br>Level:NORMAL</div>`)[0];
+                popup_09e8460a9b7d7b14cc946ec42892cb4e.setContent(html_4338cc0afd23ed379bb493e6007b275e);
+            
+        
+
+        circle_marker_f1272213014e7325b47a31bba119b61d.bindPopup(popup_09e8460a9b7d7b14cc946ec42892cb4e)
+        ;
+
+        
+    
+    
+            circle_marker_f1272213014e7325b47a31bba119b61d.bindTooltip(
+                `<div>
+                     Meghalaya | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_20dbf99c5b08609371e4a71922c1b31b = L.circleMarker(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4364, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_db3db79d7c64464d3d17b1f76e875b5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4b426b0c2ff78e5879dae64985e2916 = $(`<div id="html_b4b426b0c2ff78e5879dae64985e2916" style="width: 100.0%; height: 100.0%;"><b>Odisha</b><br>Risk:34364<br>Level:NORMAL</div>`)[0];
+                popup_db3db79d7c64464d3d17b1f76e875b5c.setContent(html_b4b426b0c2ff78e5879dae64985e2916);
+            
+        
+
+        circle_marker_20dbf99c5b08609371e4a71922c1b31b.bindPopup(popup_db3db79d7c64464d3d17b1f76e875b5c)
+        ;
+
+        
+    
+    
+            circle_marker_20dbf99c5b08609371e4a71922c1b31b.bindTooltip(
+                `<div>
+                     Odisha | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e618145f9d5756464689239f25f7004 = L.circleMarker(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4326, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_5a090091d2fce4f595a3a6f3495b217b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcd695b455dd6ad2ad1528e8b0e85431 = $(`<div id="html_bcd695b455dd6ad2ad1528e8b0e85431" style="width: 100.0%; height: 100.0%;"><b>Punjab</b><br>Risk:34326<br>Level:NORMAL</div>`)[0];
+                popup_5a090091d2fce4f595a3a6f3495b217b.setContent(html_bcd695b455dd6ad2ad1528e8b0e85431);
+            
+        
+
+        circle_marker_3e618145f9d5756464689239f25f7004.bindPopup(popup_5a090091d2fce4f595a3a6f3495b217b)
+        ;
+
+        
+    
+    
+            circle_marker_3e618145f9d5756464689239f25f7004.bindTooltip(
+                `<div>
+                     Punjab | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2ed86b5fdcac8b6ddaa4941fff94489 = L.circleMarker(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4301, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_097189cb256e2f7c73a13ba3da66bbc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3fb9fac5861a753f8cb34e8434865e7 = $(`<div id="html_f3fb9fac5861a753f8cb34e8434865e7" style="width: 100.0%; height: 100.0%;"><b>Rajasthan</b><br>Risk:34301<br>Level:NORMAL</div>`)[0];
+                popup_097189cb256e2f7c73a13ba3da66bbc7.setContent(html_f3fb9fac5861a753f8cb34e8434865e7);
+            
+        
+
+        circle_marker_f2ed86b5fdcac8b6ddaa4941fff94489.bindPopup(popup_097189cb256e2f7c73a13ba3da66bbc7)
+        ;
+
+        
+    
+    
+            circle_marker_f2ed86b5fdcac8b6ddaa4941fff94489.bindTooltip(
+                `<div>
+                     Rajasthan | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a8467cc7b69d084e34dca28be265ab4 = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4348, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_3674e51772edb9cded8cb59f3d4ee3c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a0b0623766088aa78ec88820fa0763d = $(`<div id="html_2a0b0623766088aa78ec88820fa0763d" style="width: 100.0%; height: 100.0%;"><b>Tamil Nadu</b><br>Risk:34348<br>Level:NORMAL</div>`)[0];
+                popup_3674e51772edb9cded8cb59f3d4ee3c1.setContent(html_2a0b0623766088aa78ec88820fa0763d);
+            
+        
+
+        circle_marker_2a8467cc7b69d084e34dca28be265ab4.bindPopup(popup_3674e51772edb9cded8cb59f3d4ee3c1)
+        ;
+
+        
+    
+    
+            circle_marker_2a8467cc7b69d084e34dca28be265ab4.bindTooltip(
+                `<div>
+                     Tamil Nadu | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_833a2016a8dd79e3040add56b278c216 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4293, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_17df5f5de6e45b7a4e41b8b47902a902 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_648a73237031f348e0f09aa3fef92f39 = $(`<div id="html_648a73237031f348e0f09aa3fef92f39" style="width: 100.0%; height: 100.0%;"><b>Uttar Pradesh</b><br>Risk:34293<br>Level:NORMAL</div>`)[0];
+                popup_17df5f5de6e45b7a4e41b8b47902a902.setContent(html_648a73237031f348e0f09aa3fef92f39);
+            
+        
+
+        circle_marker_833a2016a8dd79e3040add56b278c216.bindPopup(popup_17df5f5de6e45b7a4e41b8b47902a902)
+        ;
+
+        
+    
+    
+            circle_marker_833a2016a8dd79e3040add56b278c216.bindTooltip(
+                `<div>
+                     Uttar Pradesh | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_36f0ff8550c9378de411a9bf375829f7 = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4332, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f24882fa53cb31b72e0c52b336e3e6c7);
+        
+    
+        var popup_7a94c3e7d3bf3a54d7f630d1e721fe9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50496d667fd5c9470482891862cc438f = $(`<div id="html_50496d667fd5c9470482891862cc438f" style="width: 100.0%; height: 100.0%;"><b>West Bengal</b><br>Risk:34332<br>Level:NORMAL</div>`)[0];
+                popup_7a94c3e7d3bf3a54d7f630d1e721fe9e.setContent(html_50496d667fd5c9470482891862cc438f);
+            
+        
+
+        circle_marker_36f0ff8550c9378de411a9bf375829f7.bindPopup(popup_7a94c3e7d3bf3a54d7f630d1e721fe9e)
+        ;
+
+        
+    
+    
+            circle_marker_36f0ff8550c9378de411a9bf375829f7.bindTooltip(
+                `<div>
+                     West Bengal | NORMAL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_f24882fa53cb31b72e0c52b336e3e6c7.addTo(map_d0888782b346bce51eb9bb6007a7fe6a);
+        
+    
+            var layer_control_ce7f9a8f7353b2c9a79e94567639dd36_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f335d88eefd3d4e2abbf155161528a03,
+                },
+                overlays :  {
+                    "\ud83d\udd34 EXTREME" : feature_group_829d35432014f1f5c80460b54fa9f078,
+                    "\ud83d\udfe0 HIGH" : feature_group_906895323084fb5f210353ec69ca6c54,
+                    "\ud83d\udfe2 NORMAL" : feature_group_f24882fa53cb31b72e0c52b336e3e6c7,
+                },
+            };
+            let layer_control_ce7f9a8f7353b2c9a79e94567639dd36 = L.control.layers(
+                layer_control_ce7f9a8f7353b2c9a79e94567639dd36_layers.base_layers,
+                layer_control_ce7f9a8f7353b2c9a79e94567639dd36_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_d0888782b346bce51eb9bb6007a7fe6a);
+
+        
+</script>
+</html>
