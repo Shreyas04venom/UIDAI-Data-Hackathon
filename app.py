@@ -3,8 +3,11 @@ import pandas as pd
 import plotly.express as px
 import os
 import logging
+import warnings
 
-logging.getLogger('streamlit').setLevel(logging.ERROR)
+logging.getLogger('streamlit').setLevel(logging.CRITICAL)
+logging.getLogger('streamlit.runtime.scriptrunner_utils.script_run_context').setLevel(logging.CRITICAL)
+warnings.filterwarnings("ignore")
 
 csv_path = os.path.join(os.path.dirname(__file__), "daily.csv")
 if not os.path.exists(csv_path):
