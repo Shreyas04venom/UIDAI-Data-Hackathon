@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+import logging
+
+logging.getLogger('streamlit').setLevel(logging.ERROR)
 
 csv_path = os.path.join(os.path.dirname(__file__), "daily.csv")
 if not os.path.exists(csv_path):
